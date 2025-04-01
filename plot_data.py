@@ -65,7 +65,7 @@ def process_and_plot(filepaths, x_label, y_label, title, output_filename, x_colu
     # Plot the data
     plt.figure(figsize=(10, 6))
     labels = ['1 Phalanx', '2 Phalanges', '3 Phalanges']
-    colors = ['blue', 'green', 'red']
+    colors = ['lightblue', 'orange', 'green']  # Use light blue, orange, and green
 
     for i in range(len(filepaths)):
         plt.errorbar(
@@ -100,7 +100,7 @@ def process_and_plot(filepaths, x_label, y_label, title, output_filename, x_colu
 process_and_plot(
     old_filepaths,
     x_label='Position [mm]',
-    y_label='Motor Load [%]',
+    y_label='Relative Motor Load [%]',
     title='Motor Load vs Position for Different Prototypes',
     output_filename=r'c:\Users\marce\OneDrive\Desktop\Tesi\Codice\experimental_plots\saved_plots\motor_load_vs_position.pdf',
     x_column='position [mm]',
@@ -110,8 +110,8 @@ process_and_plot(
 # Process and plot the new files (mass vs load)
 process_and_plot(
     new_filepaths,
-    x_label='Mass [kg]',
-    y_label='Load [%]',
+    x_label='Hanged Mass [kg]',
+    y_label='Relative Motor Load [%]',
     title='Load vs Mass for Different Prototypes',
     output_filename=r'c:\Users\marce\OneDrive\Desktop\Tesi\Codice\experimental_plots\saved_plots\load_vs_mass.pdf',
     x_column='mass [kg]',
