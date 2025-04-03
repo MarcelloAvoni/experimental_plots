@@ -118,7 +118,7 @@ process_and_plot(
 # Process and plot the hand files (Mass vs Motor Torque)
 process_and_plot(
     hand_filepaths,
-    x_label='Hanged Mass [kg]',
+    x_label='Hung Mass [kg]',
     y_label='Motor Torque [Nm]',
     output_filename=r'c:/Users/marce/OneDrive/Desktop/Tesi/Codice/experimental_plots/saved_plots/motor_torque_vs_mass.pdf',
     x_column_index=0,  # First column (index 0)
